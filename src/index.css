@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: lightcyan;
 }
 
 h1, h4 {
