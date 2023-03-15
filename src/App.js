@@ -12,30 +12,28 @@ import Button from "./Components/Button";
 
 
 function App() {
-    function buttonClick(event) {
-        console.log(event.target.textContent)
-    }
+
   return (
       <>
       <h1>Handbags & Purses</h1>
       <nav>
           <Button
               isDisabled={false}
-              buttonClick="to the collection"
-          />
+              buttonClick={() => console.log("to the collection")}>To the collection
+          </Button>
             <Button
                 isDisabled={false}
-                buttonClick="shop all bags"
+                buttonClick={() => console.log("shop all bags")}>Shop all bags
 
-          />
+          </Button>
             <Button
                 isDisabled={true}
-                buttonClick="pre-orders"
+                buttonClick={() => console.log("pre-orders")}>Pre-orders
 
-           />
-          <button type="button" onClick={buttonClick}> to the collection</button>
-            <button type="button" onClick={buttonClick}> shop all bags</button>
-            <button type="button" onClick={buttonClick} disabled className="disabled">Pre-orders</button>
+           </Button>
+          {/*<button type="button" onClick={buttonClick}> to the collection</button>*/}
+          {/*  <button type="button" onClick={buttonClick}> shop all bags</button>*/}
+          {/*  <button type="button" onClick={buttonClick} disabled className="disabled">Pre-orders</button>*/}
       </nav>
 
       <main>

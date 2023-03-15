@@ -1,12 +1,13 @@
 import React from "react";
 
-function Button({buttonClick, isDisabled}) {
+function Button({children, buttonClick, isDisabled}) {
     return (
         <button
         type="button"
         onClick={buttonClick}
         disabled={isDisabled}
         >
+            { children }
         </button>)
 }
 
