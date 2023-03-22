@@ -5,7 +5,7 @@ function Tile({img, altText, title, children}) {
         <section>
             <img src={img} alt={altText}/>
             <h2>{title}</h2>
-            <p>{children}</p>
+            {children}
         </section>
     );
 }

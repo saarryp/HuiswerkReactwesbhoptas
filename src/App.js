@@ -48,12 +48,14 @@ function App() {
               img={bag_two}
               title="The stylish bag"
               price={250}
-           />
+              altText="foto van logo verpakking"
+          />
           <Product
               label="New collection"
               img={bag_three}
               title="The simple bag"
               price={300}
+              altText="foto van twee gelukkige dames"
            />
           <Product
               label="New collection"
@@ -64,8 +66,9 @@ function App() {
       </main>
       <footer>
           <Tile
-              title= "the brand"
-            />
+              title= "the brand">
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero leo, pellentesque ornare, adipiscing vitae, rhoncus commodo, nulla. Fusce quis ipsum. Nulla neque massa, feugiat sed, commodo in, adipiscing ut, est. In fermentum mattis ligula. Nulla ipsum. Vestibulum condimentum condimentum augue. Nunc purus risus, volutpat sagittis, lobortis at, dignissim sed, sapien. Fusce porttitor iaculis ante. Curabitur eu arcu. Morbi quam purus, tempor eget, ullamcorper feugiat, commodo ullamcorper, neque.</p>
+          </Tile>
           <Tile
               img={brand}
           />
@@ -73,8 +76,9 @@ function App() {
               img={story_our}
            />
           <Tile
-              title="our story"
-          />
+              title="our story">
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero leo, pellentesque ornare, adipiscing vitae, rhoncus commodo, nulla. Fusce quis ipsum. Nulla neque massa, feugiat sed, commodo in, adipiscing ut, est. In fermentum mattis ligula. Nulla ipsum. Vestibulum condimentum condimentum augue. Nunc purus risus, volutpat sagittis, lobortis at, dignissim sed, sapien. Fusce porttitor iaculis ante. Curabitur eu arcu. Morbi quam purus, tempor eget, ullamcorper feugiat, commodo ullamcorper, neque.</p>
+          </Tile>
       </footer>
       </>
   );
